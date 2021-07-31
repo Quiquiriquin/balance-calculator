@@ -5,21 +5,23 @@
   max-height: 100vh;
   overflow: auto;
 
-  .header {
-    background: lighten($terciary, 11%);
-    border-radius: 12px;
-    padding: 0.5rem 1rem;
-  }
-
   .grid-container {
+    width: 99%;
+    margin: 1.5rem auto;
     height: calc(90vh - 1.5rem);
+
+    .movements {
+      overflow: auto;
+    }
+
     .operations,
     .accounts,
     .movements {
-      background: lighten($terciary, 13%);
+      background: #FFFFFF;
       box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
       padding: 1rem;
+      overflow: auto;
     }
   }
   

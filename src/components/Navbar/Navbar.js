@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Navbar.scss';
 import 'boxicons';
 import {NavLink} from "react-router-dom";
@@ -31,11 +31,11 @@ const Navbar = () => {
             <span className={'tooltip'}>Dashboard</span>
           </li>
           <li>
-            <NavLink to={'/tarjetas'} activeClassName={'active'}>
+            <NavLink to={'/cuentas'} activeClassName={'active'}>
               <box-icon type={'solid'} name={'credit-card-alt'} />
-              <span className={'links_name'}>Tarjetas</span>
+              <span className={'links_name'}>Cuentas</span>
             </NavLink>
-            <span className={'tooltip'}>Tarjetas</span>
+            <span className={'tooltip'}>Cuentas</span>
           </li>
           <li>
             <NavLink to={'/movimientos'} activeClassName={'active'}>
