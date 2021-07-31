@@ -1,10 +1,12 @@
+@import 'src/assets/styles/colors';
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 78px;
-  background: #c6c6c6;
+  background: $main;
   padding: 6px 14px;
   transition: all 0.5s ease;
 
@@ -45,7 +47,7 @@
   .logo_content {
     .logo {
       opacity: 0;
-      color: #000;
+      color: $secondary;
       display: flex;
       height: 50px;
       width: 100%;
@@ -61,7 +63,7 @@
   #menu {
     cursor: pointer;
     position: absolute;
-    color: #ffffff;
+    fill: $secondary;
     top: 0.5rem;
     left: 50%;
     height: 30px;
@@ -97,13 +99,14 @@
         height: 35px;
         left: 80px;
         width: 122px;
-        background: #cacaca;
+        background: lighten($main, 15%);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         line-height: 35px;
         text-align: center;
         top: 50%;
         transform: translateY(-50%);
         border-radius: 6px;
+        color: $secondary;
       }
 
       a {
@@ -111,15 +114,20 @@
         align-items: center;
         text-decoration: none;
         transition: all 0.4s ease;
-
+        color: $secondary;
         span {
           visibility: hidden;
           pointer-events: none;
         }
 
+        &.active {
+          background: lighten($main, 15%);
+          border-radius: 12px;
+        }
+
         &:hover {
-          color: black;
-          background: #8c8c8c;
+          color: $secondary;
+          background: lighten($main, 15%);
           border-radius: 12px;
         }
         box-icon {
@@ -128,6 +136,7 @@
           border-radius: 12px;
           line-height: 50px;
           text-align: center;
+          fill: $secondary;
         }
       }
 

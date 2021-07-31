@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Navbar.scss';
 import 'boxicons';
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
   const openNavbar = () => {
@@ -23,31 +24,31 @@ const Navbar = () => {
         <box-icon onClick={openNavbar} id={'menu'} name={'menu'} />
         <ul className={'nav-list'}>
           <li>
-            <a href={'#'}>
+            <NavLink to={'/dashboard'} activeClassName={'active'}>
               <box-icon type={'solid'} name={'grid-alt'} />
               <span className={'links_name'}>Dashboard</span>
-            </a>
+            </NavLink>
             <span className={'tooltip'}>Dashboard</span>
           </li>
           <li>
-            <a href={'#'}>
+            <NavLink to={'/tarjetas'} activeClassName={'active'}>
               <box-icon type={'solid'} name={'credit-card-alt'} />
               <span className={'links_name'}>Tarjetas</span>
-            </a>
+            </NavLink>
             <span className={'tooltip'}>Tarjetas</span>
           </li>
           <li>
-            <a href={'#'}>
+            <NavLink to={'/movimientos'} activeClassName={'active'}>
               <box-icon type={'solid'} name={'spreadsheet'} />
               <span className={'links_name'}>Movimientos</span>
-            </a>
+            </NavLink>
             <span className={'tooltip'}>Movimientos</span>
           </li>
           <li>
-            <a href={'#'}>
+            <NavLink to={'/usuario'} activeClassName={'active'}>
               <box-icon type={'solid'} name={'user-circle'} />
               <span className={'links_name'}>Usuario</span>
-            </a>
+            </NavLink>
             <span className={'tooltip'}>Usuario</span>
           </li>
         </ul>
