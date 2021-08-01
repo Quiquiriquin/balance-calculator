@@ -47,7 +47,7 @@
   .logo_content {
     .logo {
       opacity: 0;
-      color: $secondary;
+      color: #FFFFFF;
       display: flex;
       height: 50px;
       width: 100%;
@@ -106,7 +106,7 @@
         top: 50%;
         transform: translateY(-50%);
         border-radius: 6px;
-        color: $secondary;
+        color: $white;
       }
 
       a {
