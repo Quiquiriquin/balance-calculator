@@ -1,10 +1,8 @@
 import React from 'react';
 import SiteHeader from "../Shared/SiteHeader";
 import AccountItem from "../Shared/AccountItem/AccountItem";
-import {Button} from "../Shared/Buttons/Button";
 import {ActionButton} from "../Shared/Buttons/ActionButton";
-import {ConfirmButton} from "../Shared/Buttons/ConfirmButton";
-import {CancelButton} from "../Shared/Buttons/CancelButton";
+
 
 const Accounts = () => {
   return (

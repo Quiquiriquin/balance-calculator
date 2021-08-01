@@ -65,7 +65,7 @@ const AccountItem = ({ name, balance, last4, color }) => {
       });
     }
     return () => {};
-  }, []);
+  }, [color, last4, name, balance, state]);
 
   return (
     <div className={'account-item'} style={{
